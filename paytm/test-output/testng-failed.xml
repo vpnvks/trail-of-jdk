@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite thread-count="2" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="firefox_Test(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <groups>
+      <run>
+        <include name="D"/>
+      </run>
+    </groups>
     <classes>
       <class name="test.Test_execution">
         <methods>
-          <include name="homepage_exec"/>
-          <include name="setup"/>
+          <include name="tag"/>
+          <include name="brouser_sel"/>
+          <include name="brouser_sel"/>
         </methods>
       </class> <!-- test.Test_execution -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- firefox_Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

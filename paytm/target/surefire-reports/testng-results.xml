@@ -1,17 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="57" started-at="2020-01-18T14:20:39Z" finished-at="2020-01-18T14:20:39Z">
+  <suite name="Suite" duration-ms="23286" started-at="2020-02-14T07:08:10Z" finished-at="2020-02-14T07:08:33Z">
     <groups>
+      <group name="C">
+        <method signature="Test_execution.tag()[pri:0, instance:test.Test_execution@5cc7c2a6]" name="tag" class="test.Test_execution"/>
+        <method signature="Test_execution.tag()[pri:0, instance:test.Test_execution@7f9a81e8]" name="tag" class="test.Test_execution"/>
+      </group> <!-- C -->
+      <group name="D">
+        <method signature="Test_execution.tag()[pri:0, instance:test.Test_execution@5cc7c2a6]" name="tag" class="test.Test_execution"/>
+        <method signature="Test_execution.tag()[pri:0, instance:test.Test_execution@7f9a81e8]" name="tag" class="test.Test_execution"/>
+      </group> <!-- D -->
     </groups>
-    <test name="Test" duration-ms="57" started-at="2020-01-18T14:20:39Z" finished-at="2020-01-18T14:20:39Z">
-      <class name="test.Print">
-        <test-method status="PASS" signature="prt()[pri:0, instance:test.Print@3cda1055]" name="prt" duration-ms="14" started-at="2020-01-18T19:50:39Z" finished-at="2020-01-18T19:50:39Z">
+    <test name="chrome_Test" duration-ms="22938" started-at="2020-02-14T07:08:10Z" finished-at="2020-02-14T07:08:32Z">
+      <class name="test.Test_execution">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:test.Test_execution@7f9a81e8]" name="setup" is-config="true" duration-ms="9438" started-at="2020-02-14T12:38:10Z" finished-at="2020-02-14T12:38:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- prt -->
-      </class> <!-- test.Print -->
-    </test> <!-- Test -->
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tag()[pri:0, instance:test.Test_execution@7f9a81e8]" name="tag" duration-ms="13493" started-at="2020-02-14T12:38:19Z" finished-at="2020-02-14T12:38:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tag -->
+      </class> <!-- test.Test_execution -->
+    </test> <!-- chrome_Test -->
+    <test name="firefox_Test" duration-ms="23286" started-at="2020-02-14T07:08:10Z" finished-at="2020-02-14T07:08:33Z">
+      <class name="test.Test_execution">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:test.Test_execution@5cc7c2a6]" name="setup" is-config="true" duration-ms="9616" started-at="2020-02-14T12:38:10Z" finished-at="2020-02-14T12:38:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tag()[pri:0, instance:test.Test_execution@5cc7c2a6]" name="tag" duration-ms="13670" started-at="2020-02-14T12:38:19Z" finished-at="2020-02-14T12:38:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tag -->
+      </class> <!-- test.Test_execution -->
+    </test> <!-- firefox_Test -->
   </suite> <!-- Suite -->
 </testng-results>
